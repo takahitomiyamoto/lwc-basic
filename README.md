@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
+# LWC Basic
 
-You can use the [editor on GitHub](https://github.com/takahitomiyamoto/lwc-basic/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Lightning Web Components を基礎から学習していきましょう。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Common Values
 
-### Markdown
+- **"習うより慣れよ"**
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  理解してから書くのではなく、書いてから理解しましょう。
 
-```markdown
-Syntax highlighted code block
+- **"とにかく写経しよう"**
 
-# Header 1
-## Header 2
-### Header 3
+  お手本を見ながら書き写すことが上達の近道です。コピペは禁止。
 
-- Bulleted
-- List
+- **"ログとお友達になろう"**
 
-1. Numbered
-2. List
+  エラーが発生しても焦らないでください。落ち着いてログを 1 行ずつ読みましょう。
 
-**Bold** and _Italic_ and `Code` text
+## Curriculum
 
-[Link](url) and ![Image](src)
-```
+- [事前準備](https://github.com/takahitomiyamoto/lwc-basic/wiki/Prerequisite)
+- [準備運動](https://github.com/takahitomiyamoto/lwc-basic/wiki/Warm-up)
+- [演習問題](https://github.com/takahitomiyamoto/lwc-basic/wiki/Exercises)
+- [次のステップ](https://github.com/takahitomiyamoto/lwc-basic/wiki/Next-Step)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Appendix
 
-### Jekyll Themes
+### Trailhead
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/takahitomiyamoto/lwc-basic/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- [Trailhead の使用開始](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_basics/get-started-with-trailhead)
+- [Lightning Web コンポーネント開発者ツールの設定](https://trailhead.salesforce.com/ja/content/learn/projects/set-up-your-lightning-web-components-developer-tools)
+- [Lightning Web コンポーネントの作成](https://trailhead.salesforce.com/ja/content/learn/trails/build-lightning-web-components)
+- [Add Sound Effects to Your Salesforce Org](https://trailhead.salesforce.com/ja/content/learn/projects/add-sound-effects-to-your-sf-org)
+- [JavaScript の操作方法](https://trailhead.salesforce.com/ja/content/learn/trails/learn-to-work-with-javascript)
+- [セキュアな Web アプリケーションの開発](https://trailhead.salesforce.com/ja/content/learn/trails/security_developer)
+- [Get Started with Web Accessibility](https://trailhead.salesforce.com/ja/content/learn/trails/get-started-with-web-accessibility)
 
-### Support or Contact
+### Developer Guide
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [Salesforce Extensions for Visual Studio Code](https://forcedotcom.github.io/salesforcedx-vscode/)
+- [Lightning Component Library](https://developer.salesforce.com/docs/component-library)
+- [Lightning Web Components Developer Guide](https://developer.salesforce.com/docs/component-library/documentation/lwc)
+
+### About me
+
+- [Tech Blog](https://qiita.com/takahito0508)
+- [Lifestyle Blog](https://medium.com/takahitomiyamoto)
+
+# Landing Page
+
+- [GitHub Page](https://takahitomiyamoto.github.io/lwc-basic/)
