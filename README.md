@@ -28,6 +28,7 @@ Lightning Web Components を基礎から学習していきましょう。
 ### Trailhead
 
 - [Trailhead の使用開始](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_basics/get-started-with-trailhead)
+- [Sample Gallery](https://trailhead.salesforce.com/sample-gallery)
 - [Lightning Web コンポーネント開発者ツールの設定](https://trailhead.salesforce.com/ja/content/learn/projects/set-up-your-lightning-web-components-developer-tools)
 - [Lightning Web コンポーネントの作成](https://trailhead.salesforce.com/ja/content/learn/trails/build-lightning-web-components)
 - [Add Sound Effects to Your Salesforce Org](https://trailhead.salesforce.com/ja/content/learn/projects/add-sound-effects-to-your-sf-org)
