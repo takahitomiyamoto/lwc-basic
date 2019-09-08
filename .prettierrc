@@ -1,0 +1,25 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": false,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "htmlWhitespaceSensitivity": "css",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "**/lwc/**/*.html",
+      "options": {"parser": "lwc"}
+    },
+    {
+      "files": "*.{cmp,page,component}",
+      "options": {"parser": "html"}
+    }
+  ]
+}
