@@ -28,16 +28,15 @@ Lightning Web Components を基礎から学習していきましょう。
 ### Trailhead
 
 - [Trailhead の使用開始](https://trailhead.salesforce.com/ja/content/learn/modules/trailhead_basics/get-started-with-trailhead)
-- [Sample Gallery](https://trailhead.salesforce.com/sample-gallery)
-- [Lightning Web コンポーネント開発者ツールの設定](https://trailhead.salesforce.com/ja/content/learn/projects/set-up-your-lightning-web-components-developer-tools)
 - [Lightning Web コンポーネントの作成](https://trailhead.salesforce.com/ja/content/learn/trails/build-lightning-web-components)
-- [Add Sound Effects to Your Salesforce Org](https://trailhead.salesforce.com/ja/content/learn/projects/add-sound-effects-to-your-sf-org)
 - [JavaScript の操作方法](https://trailhead.salesforce.com/ja/content/learn/trails/learn-to-work-with-javascript)
+- [Add Sound Effects to Your Salesforce Org](https://trailhead.salesforce.com/ja/content/learn/projects/add-sound-effects-to-your-sf-org)
 - [セキュアな Web アプリケーションの開発](https://trailhead.salesforce.com/ja/content/learn/trails/security_developer)
 - [Get Started with Web Accessibility](https://trailhead.salesforce.com/ja/content/learn/trails/get-started-with-web-accessibility)
 
 ### Developer Guide
 
+- [Sample Gallery](https://trailhead.salesforce.com/sample-gallery)
 - [Salesforce Extensions for Visual Studio Code](https://forcedotcom.github.io/salesforcedx-vscode/)
 - [Lightning Component Library](https://developer.salesforce.com/docs/component-library)
 - [Lightning Web Components Developer Guide](https://developer.salesforce.com/docs/component-library/documentation/lwc)
