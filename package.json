@@ -1,0 +1,42 @@
+{
+  "name": "vscode-quickstart",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "npm run lint:lwc && npm run lint:aura",
+    "lint:aura": "eslint **/aura/** || true",
+    "lint:lwc": "eslint **/lwc/** || true",
+    "prettier": "prettier --loglevel log --write '**/*.{component,css,cls,cmp,html,js,json,md,page,trigger}'",
+    "rebuild": "rm -rf node_modules && rm package-lock.json && npm cache clean --force && rm -rf ~/.npm && npm install",
+    "test": "npm run lint && npm run test:unit",
+    "test:unit": "npm run test:unit:apex",
+    "test:unit:apex": "sfdx force:apex:test:run --apiversion 46.0 -c -l RunLocalTests -y --verbose -r human || true"
+  },
+  "devDependencies": {
+    "@salesforce/eslint-config-lwc": "0.3.0",
+    "@salesforce/eslint-plugin-aura": "1.2.0",
+    "eslint": "6.3.0",
+    "husky": "3.0.4",
+    "lint-staged": "9.2.5",
+    "prettier": "1.18.2",
+    "prettier-plugin-apex": "1.0.0-rc.6"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{component,css,cls,cmp,html,js,json,md,page,trigger}": [
+      "prettier --write"
+    ],
+    "**/lwc/**": [
+      "eslint"
+    ],
+    "**/aura/**": [
+      "eslint"
+    ],
+    "*": [
+      "git add"
+    ]
+  }
+}
