@@ -2,6 +2,9 @@
   "name": "vscode-quickstart",
   "version": "1.0.0",
   "scripts": {
+    "force:apex:test:run": "sfdx force:apex:test:run --apiversion 46.0 -c -l RunLocalTests -y --verbose -r human || true",
+    "force:org:list": "sfdx force:org:list",
+    "force:source:retrieve:default": "sfdx force:source:retrieve -a 46.0 -m 'ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle,LightningComponentBundle'",
     "lint": "npm run lint:lwc && npm run lint:aura",
     "lint:aura": "eslint **/aura/** || true",
     "lint:lwc": "eslint **/lwc/** || true",
