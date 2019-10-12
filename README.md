@@ -33,6 +33,8 @@ Lightning Web Components を基礎から学習していきましょう。
 - [Add Sound Effects to Your Salesforce Org](https://trailhead.salesforce.com/ja/content/learn/projects/add-sound-effects-to-your-sf-org)
 - [セキュアな Web アプリケーションの開発](https://trailhead.salesforce.com/ja/content/learn/trails/security_developer)
 - [Get Started with Web Accessibility](https://trailhead.salesforce.com/ja/content/learn/trails/get-started-with-web-accessibility)
+- [Build Apps with Lightning Web Components Open Source](https://trailhead.salesforce.com/ja/content/learn/trails/build-apps-lightning-web-components-open-source)
+- [Trailhead Quest](https://trailhead.salesforce.com/quests/web-components)
 
 ### Developer Guide
 
