@@ -1,26 +1,27 @@
 {
-  "name": "vscode-quickstart",
+  "name": "sfdx-project-template",
   "version": "1.0.0",
+  "description": "This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.",
+  "private": true,
+  "devDependencies": {
+    "@prettier/plugin-xml": "0.3.0",
+    "@salesforce/eslint-config-lwc": "0.4.0",
+    "eslint": "6.7.1",
+    "husky": "3.1.0",
+    "lint-staged": "9.5.0",
+    "prettier": "1.19.1",
+    "prettier-plugin-apex": "1.1.0"
+  },
   "scripts": {
-    "force:apex:test:run": "sfdx force:apex:test:run --apiversion 46.0 -c -l RunLocalTests -y --verbose -r human || true",
-    "force:org:list": "sfdx force:org:list",
-    "force:source:retrieve:default": "sfdx force:source:retrieve -a 46.0 -m 'ApexClass,ApexComponent,ApexPage,ApexTrigger,AuraDefinitionBundle,LightningComponentBundle'",
-    "lint": "npm run lint:lwc && npm run lint:aura",
+    "lint": "npm run lint:all:json",
+    "lint:all:json": "eslint force-app --output-file logs/eslint.json --format json",
     "lint:aura": "eslint **/aura/** || true",
     "lint:lwc": "eslint **/lwc/** || true",
-    "prettier": "prettier --loglevel log --write '**/*.{component,css,cls,cmp,html,js,json,md,page,trigger}'",
+    "prettier": "prettier --loglevel log --write \"**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}\"",
     "rebuild": "rm -rf node_modules && rm package-lock.json && npm cache clean --force && rm -rf ~/.npm && npm install",
     "test": "npm run lint && npm run test:unit",
     "test:unit": "npm run test:unit:apex",
-    "test:unit:apex": "sfdx force:apex:test:run --apiversion 46.0 -c -l RunLocalTests -y --verbose -r human || true"
-  },
-  "devDependencies": {
-    "@salesforce/eslint-config-lwc": "0.3.0",
-    "eslint": "6.3.0",
-    "husky": "3.0.4",
-    "lint-staged": "9.2.5",
-    "prettier": "1.18.2",
-    "prettier-plugin-apex": "1.0.0-rc.6"
+    "test:unit:apex": "sfdx force:apex:test:run --loglevel DEBUG --apiversion 47.0 --codecoverage --testlevel RunLocalTests --synchronous --verbose --resultformat human || true"
   },
   "husky": {
     "hooks": {
@@ -28,7 +29,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{component,css,cls,cmp,html,js,json,md,page,trigger}": [
+    "**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}": [
       "prettier --write"
     ],
     "**/lwc/**": [
