@@ -42,6 +42,7 @@ Lightning Web Components を基礎から学習していきましょう。
 - [Salesforce Extensions for Visual Studio Code](https://forcedotcom.github.io/salesforcedx-vscode/)
 - [Lightning Component Library](https://developer.salesforce.com/docs/component-library)
 - [Lightning Web Components Developer Guide](https://developer.salesforce.com/docs/component-library/documentation/lwc)
+- [Lightning Web Components (OSS)](https://lwc.dev/)
 
 ### About me
 
