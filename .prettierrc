@@ -12,6 +12,7 @@
   "arrowParens": "always",
   "htmlWhitespaceSensitivity": "css",
   "endOfLine": "auto",
+  "xmlSelfClosingTags": true,
   "overrides": [
     {
       "files": "**/lwc/**/*.html",
