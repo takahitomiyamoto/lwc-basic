@@ -2,6 +2,7 @@ import {LightningElement, track} from 'lwc';
 
 export default class BmiCalcurator extends LightningElement {
   label = {
+    title: 'BMI Calcurator',
     height: '身長(cm)',
     weight: '体重(kg)',
     calculate: '計算',
