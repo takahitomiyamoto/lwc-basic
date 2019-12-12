@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title={label.title} icon-name="custom:custom63">
+    <div class="slds-m-around_medium">
+      <lightning-layout vertical-align="end" class="slds-m-bottom_small">
+        <lightning-layout-item flexibility="grow">
+          <lightning-input
+            type="search"
+            onchange={handleKeyChange}
+            label={label.opportunityName}
+            value={searchKey}
+          ></lightning-input>
+        </lightning-layout-item>
+        <lightning-layout-item class="slds-p-left_xx-small">
+          <lightning-button
+            label={label.search}
+            onclick={handleSearch}
+          ></lightning-button>
+        </lightning-layout-item>
+      </lightning-layout>
+      <template if:true={opportunities}>
+        <template for:each={opportunities} for:item="opportunity">
+          <p key={opportunity.Id}>
+            {opportunity.Name}, {opportunity.Amount}, {opportunity.StageName}
+          </p>
+        </template>
+      </template>
+    </div>
+    <template if:true={error}>
+      <c-error-panel errors={error}></c-error-panel>
+    </template>
+  </lightning-card>
+</template>
