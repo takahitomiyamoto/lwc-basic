@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title="BMI Calcurator" icon-name="custom:custom19">
+    <div class="slds-m-around_medium">
+      <lightning-input
+        type="number"
+        step="0.1"
+        label={label.height}
+        value={height}
+        onchange={heightChange}
+      ></lightning-input>
+      <lightning-input
+        type="number"
+        step="0.1"
+        label={label.weight}
+        value={weight}
+        onchange={weightChange}
+      ></lightning-input>
+      <p class="slds-m-vertical_small">
+        <lightning-button
+          label={label.calculate}
+          onclick={calculateBmi}
+        ></lightning-button>
+      </p>
+      <p>{label.bmi}</p>
+      <lightning-formatted-number
+        format-style="decimal"
+        maximum-fraction-digits="1"
+        value={bmi}
+      ></lightning-formatted-number>
+    </div>
+  </lightning-card>
+</template>
