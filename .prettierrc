@@ -11,8 +11,8 @@
   "jsxBracketSameLine": false,
   "arrowParens": "always",
   "htmlWhitespaceSensitivity": "css",
-  "endOfLine": "auto",
-  "xmlSelfClosingTags": true,
+  "endOfLine": "lf",
+  "xmlSelfClosingSpace": true,
   "overrides": [
     {
       "files": "**/lwc/**/*.html",
