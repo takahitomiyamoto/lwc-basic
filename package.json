@@ -1,27 +1,46 @@
 {
-  "name": "sfdx-project-template",
+  "name": "vscode-remote-sfdx-project",
   "version": "1.0.0",
   "description": "This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.",
   "private": true,
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "devDependencies": {
-    "@prettier/plugin-xml": "0.3.0",
+    "@babel/core": "7.8.3",
+    "@babel/register": "7.8.3",
+    "@prettier/plugin-xml": "0.5.0",
     "@salesforce/eslint-config-lwc": "0.4.0",
-    "eslint": "6.7.1",
-    "husky": "3.1.0",
-    "lint-staged": "9.5.0",
+    "babel-preset-env": "1.7.0",
+    "eslint": "6.8.0",
+    "gulp": "4.0.2",
+    "gulp-shell": "0.7.1",
+    "husky": "4.2.0",
+    "lint-staged": "10.0.2",
     "prettier": "1.19.1",
     "prettier-plugin-apex": "1.1.0"
   },
   "scripts": {
+    "gulp:detectSourceOrg": "gulp detectSourceOrg",
+    "gulp:detectTargetOrg": "gulp detectTargetOrg",
+    "gulp:preValidate": "gulp preValidate",
+    "gulp:postValidate": "gulp postValidate",
+    "gulp:preDeploy": "gulp preDeploy",
+    "gulp:postDeploy": "gulp postDeploy",
     "lint": "npm run lint:all:json",
     "lint:all:json": "eslint force-app --output-file logs/eslint.json --format json",
-    "lint:aura": "eslint **/aura/** || true",
-    "lint:lwc": "eslint **/lwc/** || true",
+    "lint:all:checkstyle": "eslint force-app --output-file logs/eslint.xml --format checkstyle",
+    "lint:aura": "eslint **/aura/**",
+    "lint:lwc": "eslint **/lwc/**",
     "prettier": "prettier --loglevel log --write \"**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}\"",
+    "prettier:list-different": "prettier --loglevel log --list-different \"**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}\"",
+    "prettier:force-app": "prettier --loglevel log --write \"force-app/**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}\"",
     "rebuild": "rm -rf node_modules && rm package-lock.json && npm cache clean --force && rm -rf ~/.npm && npm install",
-    "test": "npm run lint && npm run test:unit",
+    "test": "npm run lint",
     "test:unit": "npm run test:unit:apex",
-    "test:unit:apex": "sfdx force:apex:test:run --loglevel DEBUG --apiversion 47.0 --codecoverage --testlevel RunLocalTests --synchronous --verbose --resultformat human || true"
+    "test:unit:apex": "sfdx force:apex:test:run --codecoverage --testlevel RunLocalTests --synchronous --verbose --resultformat human"
   },
   "husky": {
     "hooks": {
@@ -30,7 +49,7 @@
   },
   "lint-staged": {
     "**/*.{component,css,cls,cmp,html,js,json,md,page,trigger,xml}": [
-      "prettier --write"
+      "prettier --loglevel log --write"
     ],
     "**/lwc/**": [
       "eslint"
