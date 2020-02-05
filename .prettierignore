@@ -2,5 +2,6 @@
 # More information: https://prettier.io/docs/en/ignore.html
 #
 
-**/staticresources/**
 .sfdx
+.localdevserver
+**/staticresources/**
